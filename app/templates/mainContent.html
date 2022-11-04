@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+<!-- Inicia um bloco para a incerção de conteudos. -->
+{% block content %}
+    <div class="row mt-5 justify-content-center">
+        <div class="col-10">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic mollitia dolorem reprehenderit, at ipsam numquam praesentium qui, sunt rem magnam illum est facilis dicta odit ipsa! Ratione voluptatibus aspernatur sint?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic mollitia dolorem reprehenderit, at ipsam numquam praesentium qui, sunt rem magnam illum est facilis dicta odit ipsa! Ratione voluptatibus aspernatur sint?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic mollitia dolorem reprehenderit, at ipsam numquam praesentium qui, sunt rem magnam illum est facilis dicta odit ipsa! Ratione voluptatibus aspernatur sint?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic mollitia dolorem reprehenderit, at ipsam numquam praesentium qui, sunt rem magnam illum est facilis dicta odit ipsa! Ratione voluptatibus aspernatur sint?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic mollitia dolorem reprehenderit, at ipsam numquam praesentium qui, sunt rem magnam illum est facilis dicta odit ipsa! Ratione voluptatibus aspernatur sint?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic mollitia dolorem reprehenderit, at ipsam numquam praesentium qui, sunt rem magnam illum est facilis dicta odit ipsa! Ratione voluptatibus aspernatur sint?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic mollitia dolore
+                </p>
+        </div>
+    </div>
+    <hr>
+    <div class="container py-4 align-items-end" id="custom-cards">
+        <div class="row row-cols-1 row-cols-lg-4 align-items-stretch g-4">
+          <div class="col-3 p-1">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
+              <div class="d-flex flex-column h-100 p-3 pb-2 text-white text-shadow-1">
+                <img src="{% static 'img/logoCespe.png' %}" alt="">
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="d-flex align-items-center me-1">
+                    <a href="https://www.cebraspe.org.br/sobre-nos/"><button type="button" class="btn btn-primary"><small>Saiba Mais</small></button></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 p-1">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
+              <div class="d-flex flex-column h-100 p-3 pb-2 text-white text-shadow-1">
+                <img src="{% static 'img/logoFgv.png' %}" alt="">
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="d-flex align-items-center me-1">
+                    <a href="https://portal.fgv.br/institucional"><button type="button" class="btn btn-primary"><small>Saiba Mais</small></button></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 p-1">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
+              <div class="d-flex flex-column h-100 p-3 pb-2 text-white text-shadow-1">
+                <img src="{% static 'img/logoFuvest.png' %}" alt="">
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="d-flex align-items-center me-1">
+                    <a href="https://www.fuvest.br/sobre/"><button type="button" class="btn btn-primary"><small>Saiba Mais</small></button></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 p-1">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
+              <div class="d-flex flex-column h-100 p-3 pb-2 text-white text-shadow-1">
+                <img src="{% static 'img/logoCiee.png' %}" class="p-2" alt="">
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="d-flex align-items-center me-1">
+                    <a href="https://portal.ciee.org.br/institucional/o-que-e-o-ciee/"><button type="button" class="btn btn-primary"><small>Saiba Mais</small></button></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+{% endblock%}
