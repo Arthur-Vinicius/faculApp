@@ -10,10 +10,11 @@ body{
     transition: background 0.3s linear;
     height: 100vh;
 }
-body.dark{
+
+/*body.dark{
     background-color: #797979;
     color: rgb(0, 0, 0);
-}
+}*/
 .navbar{
     margin: 0px;
 }
