@@ -18,8 +18,11 @@
       <a class="navbar-brand " href="https://vengardwebsite.herokuapp.com/">
         <img src="{% static 'img/logoInicial.png' %}" class="tamanho_logo" alt="logo">
       </a>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">  
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Bancas Organizadoras
@@ -29,19 +32,6 @@
               <li><a class="dropdown-item" href="/ciee/">CIEE</a></li>
               <li><a class="dropdown-item" href="/cebraspe/">CEBRASPE</a></li>
               <li><a class="dropdown-item" href="/fuvest/">FUVEST</a></li>
-              <!--
-                <li><a href="https://www.pciconcursos.com.br/provas/2020/" target="A">Prova 2020</a></li>
-              <li><a href="https://www.pciconcursos.com.br/provas/2019/" target="A">Prova 2019</a></li>
-      
-              <li><a href="https://www.pciconcursos.com.br/provas/2020/" target="A">Prova 2020</a></li>
-              <li><a href="https://www.pciconcursos.com.br/provas/2019/" target="A">Prova 2019</a></li>
-       
-              <li><a href="https://www.pciconcursos.com.br/provas/2020/" target="A">Prova 2020</a></li>
-              <li><a href="https://www.pciconcursos.com.br/provas/2019/" target="A">Prova 2019</a></li>
-      
-              <li><a href="https://www.curso-objetivo.br/vestibular/resolucao_comentada/fuvest/fuvest2020_1fase.asp?img=01" target="A">Prova 2020</a></li>
-              <li><a href="https://www.curso-objetivo.br/vestibular/resolucao_comentada/fuvest/fuvest2019_1fase.asp?img=01" target="A">Prova 2019</a></li>
-              -->
             </ul>
           </li>    
         </ul> 
@@ -89,7 +79,25 @@
     
     {% endblock%}
   </div>
-
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-2">
+      <div class="container-fluid ">
+          <div class="col-12 align-items-center">
+              <ul class="col-12 navbar-nav me-auto mb-1 mb-lg-0 align-self-center">
+                  <li class="nav-item col-4 align-self-center">
+                    <a class="nav-link text-center" href="" >Contato </a>
+                  </li>
+                  <li class="col-4 nav-item align-self-center">
+                    <a class="nav-link text-center" href="" >Sobre </a>
+                  </li>
+                  <li class="col-4 nav-item align-self-center">
+                    <a class="nav-link text-center" href="" > + </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  </div>
 </body>
     
 <footer>
