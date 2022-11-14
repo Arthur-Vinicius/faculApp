@@ -30,9 +30,11 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+            <a class="nav-link dropdown" href="#" id="navbarScrollingDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
-              Bancas Organizadoras
+              <button type="button" class="btn bntnotokColor">
+                Bancas Organizadoras
+              </button>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
               <li><a class="dropdown-item" href="/fgv/">FGV</a></li>
@@ -50,9 +52,11 @@
         {% if request.user.is_authenticated %}
         <ul class="navbar-nav me-1 mb-2 mb-lg-0">
           <li class="nav-item dropdown bnt bnt-success">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+            <a class="nav-link dropdown" href="#" id="navbarScrollingDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
-              Configurações
+              <button type="button" class="btn bntnotokColor">
+                Configurações
+              </button>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
               <li><a class="dropdown-item" href="#">Perfil</a></li>
@@ -63,6 +67,8 @@
               <li><a class="dropdown-item" href="#">.</a></li>
             </ul>
           </li>
+        </ul>
+        <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="/logouts/"><button type="button" class="btn bntnotokColor">Sair</button></a>
           </li>
