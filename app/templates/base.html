@@ -28,9 +28,9 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item dropdown  mt-1 mt-md-auto mt-lg-auto mt-xl-auto">
+            <a class="nav-link dropdown-toggle btn bntnotokColor" href="#" id="navbarScrollingDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
               Bancas Organizadoras
             </a>
@@ -43,31 +43,26 @@
           </li>
         </ul>
         
-        <ul class="navbar-nav me-1 mb-2 mb-lg-0">
+        <ul class="navbar-nav">
           {% if request.user.is_authenticated %}
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle btn" href="#" id="navbarScrollingDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Configurações
-            </a>
+          <li class="nav-item dropdown mt-1 mt-md-auto mt-lg-auto mt-xl-auto mx-0 mx-md-3 mx-lg-3 mx-xl-3">
+            <a class="nav-link dropdown-toggle btn bntnotokColor" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Configurações</a>
             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
               <li><a class="dropdown-item" href="#">Perfil</a></li>
               <li><a class="dropdown-item" href="#">.</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
+              <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#">.</a></li>
             </ul>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="/logouts/"><button type="button" class="bntnotokColor btn">Sair</button></a>
+          <li class="nav-item mt-1 mt-md-auto mt-lg-auto mt-xl-auto mx-0 mx-md-3 mx-lg-3 mx-xl-3">
+            <a class="nav-link btn bntnotokColor" href="/logouts/">Sair</button></a>
           </li>
           {% else %}
-          <li class="nav-item">
-            <a class="nav-link" href="/telaLogin/"><button type="button" class="bntokColor btn">login</button></a>
+          <li class="nav-item mt-1 mt-md-auto mt-lg-auto mt-xl-auto mx-0 mx-md-3 mx-lg-3 mx-xl-3">
+            <a class="nav-link btn bntnotokColor" href="/telaLogin/">login</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/cad/"><button type="button" class="bntnotokColor btn">Cadastro</button></a>
+          <li class="nav-item mt-1 mt-md-auto mt-lg-auto mt-xl-auto mx-0 mx-md-3 mx-lg-3 mx-xl-3">
+            <a class="nav-link btn bntnotokColor" href="/cad/">Cadastro</a>
           </li>
           {% endif %}
         </ul>
