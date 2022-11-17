@@ -42,10 +42,11 @@
             </ul>
           </li>
         </ul>
-        {% if request.user.is_authenticated %}
+        
         <ul class="navbar-nav me-1 mb-2 mb-lg-0">
+          {% if request.user.is_authenticated %}
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+            <a class="nav-link dropdown-toggle btn" href="#" id="navbarScrollingDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
               Configurações
             </a>
@@ -58,20 +59,18 @@
               <li><a class="dropdown-item" href="#">.</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/logouts/"><button type="button" class="bntnotokColor">Sair</button></a>
+          <li class="nav-item ">
+            <a class="nav-link" href="/logouts/"><button type="button" class="bntnotokColor btn">Sair</button></a>
           </li>
           {% else %}
           <li class="nav-item">
-            <a class="nav-link" href="/telaLogin/"><button type="button" class="bntokColor">login</button></a>
+            <a class="nav-link" href="/telaLogin/"><button type="button" class="bntokColor btn">login</button></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/cad/"><button type="button" class="bntnotokColor">Cadastro</button></a>
+            <a class="nav-link" href="/cad/"><button type="button" class="bntnotokColor btn">Cadastro</button></a>
           </li>
           {% endif %}
         </ul>
-
-
       </div>
     </div>
   </nav>
