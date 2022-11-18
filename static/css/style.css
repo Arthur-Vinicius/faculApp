@@ -69,17 +69,26 @@ body.dark {
 /*---------- TELAS DAS BANCAS ------------*/
 
 .borderbntpg {
-    font: white;
-    background-color: #884856;
+    background-color: #8cbaf5;
     border: 1px solid white;
     border-radius: 10px;
+    text-decoration: none;
 }
 
 /*--------- FIM TELAS DAS BANCAS ---------*/
 /*||||||||||||||||||||||||||||||||||||||||*/
-/*---------  ---------*/
+/*--------- LINKS ESTYLING ---------*/
 
-
+a:link, a:visited {
+	text-decoration: none
+	}
+a:hover {
+	text-decoration: underline;
+	color: #f00
+	}
+a:active {
+	text-decoration: none
+	}
 
 /*--------- FIM  ---------*/
 /*||||||||||||||||||||||||||||||||||||||||*/
