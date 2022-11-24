@@ -10,11 +10,11 @@ from django.http import HttpResponse
 
 # Retorna a pagina template index.html e renderiza
 def index(request):
-    return render(request,'mainContent.html')
+    return render(request,'estrutura/mainContent.html')
 
 # Retorna a pagina template create.html e renderiza
 def cad(request):
-    return render(request,'cadastro.html')
+    return render(request,'acesso/cadastro.html')
 
 # Esta Função verifica no banco de as senhas digitadas são iguais no caso password e password-conf
 def store(request):
@@ -41,7 +41,7 @@ def store(request):
 
 # Chamada do template html para renderizar na pagina que será realizado o login.   
 def telaLogin(request):
-    return render(request, 'telaLogin.html')
+    return render(request, 'acesso/telaLogin.html')
 
 # Autenticação de credenciais para validação de login.
 def dologin(request):
@@ -57,10 +57,6 @@ def dologin(request):
         data['msg'] = 'Nome de Usuário ou senha inválidos!'
         data['class'] = 'alert-danger'
         return render(request, 'telaLogin.html', data)
-
-# Chama o arquivo home.html da pasta dashbord para renderização na tela.
-def dashboard(request):
-    return render(request, 'dashboard/home.html')
 
 # Chama o arquivo telaLogin.html para renderizar na tela indicando que a seção foi encerrada.
 def logouts(request):

@@ -10,7 +10,8 @@
 body {
     background-color: #ffffff;
     transition: background 0.3s linear;
-    height: 100vh;
+    display:flex;
+    flex-direction: column;
 }
 
 body.dark {
@@ -21,9 +22,7 @@ body.dark {
 /*|||||||||||||||||||||||||||||||||||||||*/
 /*--------------- NAVBAR ----------------*/
 .tamanho_logo {
-    padding: 5px;
-    width: 85px;
-    height: 65px;
+    height: 55px;
 }
 
 /*Botões navbar*/
@@ -34,20 +33,19 @@ body.dark {
 
 /*------------- FIM NAVBAR ---------------*/
 /*||||||||||||||||||||||||||||||||||||||||*/
-/*------------- TELA LOGIN ---------------*/
+/*------------- TELA LOGIN & CADASTRO ---------------*/
 
+
+.bntokColor {
+    background-color: #36be46;
+    color: whitesmoke;
+}
 .formloginecad {
     background-color: #27343d;
     color: whitesmoke;
     text-decoration: none;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
 
-}
-
-/*Botão entrar tela login*/
-.bntokColor {
-    background-color: #36be46;
-    color: whitesmoke;
 }
 
 
@@ -92,3 +90,15 @@ a:active {
 
 /*--------- FIM  ---------*/
 /*||||||||||||||||||||||||||||||||||||||||*/
+
+.vhtamanho{
+    height: 90vh;
+}
+
+.navbar{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+.pgs-bnts{
+    padding: 2px;
+}

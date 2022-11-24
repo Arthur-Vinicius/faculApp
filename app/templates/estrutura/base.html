@@ -14,14 +14,12 @@
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
   <script src="{% static 'js/javascript.js' %}"></script>
 </head>
-<body>
-
-  
-
+<body class="vh-100">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand " href="https://webquestoesconcursos.herokuapp.com/">
-        <img src="{% static 'img/logoInicial.png' %}" class="tamanho_logo" alt="logo">
+      <a class="navbar-brand " href="http://127.0.0.1:8000/">
+      <!--<a class="navbar-brand " href="https://webquestoesconcursos.herokuapp.com/">
+      --><img src="{% static 'img/logoInicial.png' %}" class="tamanho_logo" alt="logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +27,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto">
-          <li class="nav-item dropdown  mt-1 mt-md-auto mt-lg-auto mt-xl-auto">
+          <li class="nav-item dropdown mt-1 mt-md-auto mt-lg-auto mt-xl-auto mx-0 mx-md-3 mx-lg-3 mx-xl-3">
             <a class="nav-link dropdown-toggle btn bntnotokColor" href="#" id="navbarScrollingDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
               Bancas Organizadoras
@@ -72,26 +70,9 @@
   <div class="container">
     {% block content %}
     {% endblock%}
+    
   </div>
-  <div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-2">
-      <div class="container-fluid ">
-        <div class="col-12 align-items-center">
-          <ul class="col-12 navbar-nav me-auto mb-1 mb-lg-0 align-self-center">
-            <li class="nav-item col-4 align-self-center">
-              <a class="nav-link text-center" href="">Contato</a>
-            </li>
-            <li class="col-4 nav-item align-self-center">
-              <a class="nav-link text-center" href="">Sobre</a>
-            </li>
-            <li class="col-4 nav-item align-self-center">
-              <a class="nav-link text-center" href=""> + </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
+  
 </body>
 <footer>
   <!-- scripts bootstrap -->
