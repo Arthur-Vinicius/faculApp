@@ -15,10 +15,10 @@
   <script src="{% static 'js/javascript.js' %}"></script>
 </head>
 <body class="vh-100">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <!--<a class="navbar-brand " href="http://127.0.0.1:8000/">
-      --><a class="navbar-brand " href="https://webquestoesconcursos.herokuapp.com/">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mx-5">
+    <div class="container-fluid mx-5">
+      <!--<a class="navbar-brand " href="https://webquestoesconcursos.herokuapp.com/">
+      --><a class="navbar-brand " href="http://127.0.0.1:8000/">
       <img src="{% static 'img/logoInicial.png' %}" class="tamanho_logo" alt="logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -26,7 +26,8 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto">
+        {% if request.user.is_authenticated %}
+        <ul class="navbar-nav">
           <li class="nav-item dropdown mt-1 mt-md-auto mt-lg-auto mt-xl-auto mx-0 mx-md-3 mx-lg-3 mx-xl-3">
             <a class="nav-link dropdown-toggle btn bntnotokColor" href="#" id="navbarScrollingDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
@@ -39,6 +40,21 @@
               <li><a class="dropdown-item" href="/fuvest/">FUVEST</a></li>
             </ul>
           </li>
+        </ul>
+        {% endif %}
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item dropdown mt-1 mt-md-auto mt-lg-auto mt-xl-auto mx-0 mx-md-3 mx-lg-3 mx-xl-3">
+            <a class="nav-link dropdown-toggle btn bntnotokColor" href="#" id="navbarScrollingDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              informações
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="/contato/">Contato</a></li>
+              <li><a class="dropdown-item" href="/sobre/">Sobre</a></li>
+              <li><a class="dropdown-item" href="/mais/">Mais</a></li>
+            </ul>
+          </li>
+          
         </ul>
         
         <ul class="navbar-nav">
