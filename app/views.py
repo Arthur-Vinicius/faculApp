@@ -87,3 +87,6 @@ def cebraspe(request):
 
 def fgv(request):
     return render(request,'bancas/fgv.html')
+
+def contato(request):
+    return render(request,'info/contato.html')
