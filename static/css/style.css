@@ -12,6 +12,7 @@ body {
     transition: background 0.3s linear;
     display:flex;
     flex-direction: column;
+    
 }
 
 body.dark {
@@ -27,7 +28,7 @@ body.dark {
 
 /*Botões navbar*/
 .bntnotokColor {
-    background-color: #408dc4;
+    background-color: #3271BE !important;
     color: whitesmoke;
 }
 
@@ -67,7 +68,7 @@ body.dark {
 /*---------- TELAS DAS BANCAS ------------*/
 
 .borderbntpg {
-    background-color: #8cbaf5;
+    background-color: #84B1D9;
     border: 1px solid white;
     border-radius: 10px;
     text-decoration: none;
@@ -95,10 +96,18 @@ a:active {
     height: 90vh;
 }
 
-.navbar{
+.navbar {
+    color: rgba(255, 255, 255, 0.842) !important;
     padding-top: 0px !important;
     padding-bottom: 0px !important;
 }
 .pgs-bnts{
     padding: 2px;
+    color: #000000 !important;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: rgba(255, 255, 255, 0.842) !important;
+}
+.bg-light  {
+    background-color: #3271BE !important;
 }
