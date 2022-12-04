@@ -3,18 +3,35 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from django.views.decorators.csrf import csrf_exempt
-
 from django.http import HttpResponse
-
-# Create your views here.
 
 # Retorna a pagina template index.html e renderiza
 def index(request):
     return render(request,'estrutura/mainContent.html')
 
-# Retorna a pagina template create.html e renderiza
 def cad(request):
     return render(request,'acesso/cadastro.html')
+
+def ciee(request):
+    return render(request,'bancas/ciee.html')
+
+def fuvest(request):
+    return render(request,'bancas/fuvest.html')
+
+def cebraspe(request):
+    return render(request,'bancas/cebraspe.html')
+
+def fgv(request):
+    return render(request,'bancas/fgv.html')
+
+def contato(request):
+    return render(request,'info/contato.html')
+
+def sobre(request):
+    return render(request,'info/sobre.html')
+
+def telaLogin(request):
+    return render(request, 'acesso/telaLogin.html')
 
 # Esta Função verifica no banco de as senhas digitadas são iguais no caso password e password-conf
 def store(request):
@@ -38,10 +55,6 @@ def store(request):
         data['msg'] = 'Usuário cadastrado com sucesso!'
         data['class'] = 'alert-success'
     return render(request,'cadastro.html',data)
-
-# Chamada do template html para renderizar na pagina que será realizado o login.   
-def telaLogin(request):
-    return render(request, 'acesso/telaLogin.html')
 
 # Autenticação de credenciais para validação de login.
 def dologin(request):
@@ -76,17 +89,4 @@ def changePassword(request):
     logout(request)
     return redirect('/painel/')
 
-def ciee(request):
-    return render(request,'bancas/ciee.html')
 
-def fuvest(request):
-    return render(request,'bancas/fuvest.html')
-
-def cebraspe(request):
-    return render(request,'bancas/cebraspe.html')
-
-def fgv(request):
-    return render(request,'bancas/fgv.html')
-
-def contato(request):
-    return render(request,'info/contato.html')
