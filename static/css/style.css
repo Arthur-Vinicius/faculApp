@@ -151,7 +151,7 @@ label{
     transition: .4s;
 }
 .sidebar ul li:hover a{
-    padding-left: 50px;
+    padding-left: 30px;
 
 }
 .sidebar ul a i{
@@ -167,11 +167,11 @@ label #bnt,label #cancel{
     border-radius: 3px;
 }
 label #bnt{
-    left: 40px;
+    left: 20px;
     top: 75px;
-    font-size: 35px;
+    font-size: 30px;
     color: #ffffff;
-    padding: 6px 12px;
+    padding: 4px 12px;
     transition: all .5s;
 }
 label #cancel{
@@ -192,5 +192,5 @@ label #cancel{
     pointer-events: none;
 }
 #check:checked ~ label #cancel{
-    left: 205px;
+    left: 195px;
 }
